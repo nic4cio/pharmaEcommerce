@@ -1,3 +1,44 @@
 img {
     width: 16rem;
 }
+
+/*header section*/
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.nav-items {
+    display: flex;
+    gap: 2em;
+    flex-wrap: inherit;   
+    align-items: center;   
+    justify-content: center;  
+}
+
+.nav-items a{
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.nav-items a:link {
+    color: #000;
+}
+
+.nav-items a:hover{
+    text-decoration: underline;
+    color: rgb(255, 133, 255);
+}
+
+.nav-items a:visited {
+    color: rgb(0, 119, 137);
+}
+
+.nav-items a:active {
+    color: lime;
+}
+
+/**/
