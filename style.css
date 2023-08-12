@@ -42,3 +42,27 @@ img {
 }
 
 /**/
+
+/*Main section cards*/
+.cardsdiv {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    padding: 1.5em;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.medication-img {
+    width: 10em;
+}
+
+
+
