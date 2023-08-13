@@ -55,6 +55,11 @@ cardData.forEach(data => {
     const heartIcon = document.createElement("i");
     heartIcon.className = "bi bi-heart";
 
+    heartIcon.addEventListener("click", () => {
+        console.log(`Medicamento favoritado: ${data.title}`);
+        alert(`O medicamento ${data.title} foi adicionado aos favoritos`);
+    })
+
     const heartText = document.createElement("p");
     heartText.className = "card-text";
     heartText.appendChild(heartIcon);
@@ -69,7 +74,7 @@ cardData.forEach(data => {
 
     addButton.addEventListener("click", () => {
         console.log(`Medicamento adicionado: ${data.title}`);
-        alert(`O medicamento ${data.title} foi adicionado com sucesso ao carrinho.`)
+        alert(`O medicamento ${data.title} foi adicionado com sucesso ao carrinho.`);
     })
 
     const plusIcon = document.createElement("i");
