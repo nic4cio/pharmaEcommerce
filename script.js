@@ -68,7 +68,7 @@ cardData.forEach(data => {
     addButton.textContent = "Botão Adicionar";
 
     addButton.addEventListener("click", () => {
-        console.log("Medicamento adicionado: ", data.title);
+        console.log(`Medicamento adicionado: ${data.title}`);
         alert(`O medicamento ${data.title} foi adicionado com sucesso ao carrinho.`)
     })
 
