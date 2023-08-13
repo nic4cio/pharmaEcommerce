@@ -1,7 +1,6 @@
 const logoElement = document.querySelector("#logo");
 logoElement.src = "./images/pharmaLogo.svg";
 
-
 const menuItems = [
     { text: "Todos os remédios", link: "./index.html"},
     { text: "Sobre nós", link: "#"},
@@ -19,6 +18,17 @@ menuItems.forEach(item => {
 
     li.appendChild(a);
     menuNavContainer.appendChild(li);
+});
+
+const headerNav = document.querySelector('#navbar');
+
+const darkModeBtn = document.getElementById("dark-mode-btn");
+const body = document.body;
+
+darkModeBtn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    headerNav.classList.toggle("navbar-dark");
+    headerNav.classList.toggle("bg-dark");
 });
 
 
