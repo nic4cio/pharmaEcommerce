@@ -23,12 +23,12 @@ menuItems.forEach(item => {
 
 
 const cardData = [
-    {title: "Título", icon: "bi-heart", price: "R$XX,XX"},
-    {title: "Título", icon: "bi-heart", price: "R$XX,XX"},
-    {title: "Título", icon: "bi-heart", price: "R$XX,XX"},
-    {title: "Título", icon: "bi-heart", price: "R$XX,XX"},
-    {title: "Título", icon: "bi-heart", price: "R$XX,XX"},
-    {title: "Título", icon: "bi-heart", price: "R$XX,XX"},
+    {title: "Medicamento1", icon: "bi-heart", price: "R$XX,XX"},
+    {title: "Medicamento2", icon: "bi-heart", price: "R$XX,XX"},
+    {title: "Medicamento3", icon: "bi-heart", price: "R$XX,XX"},
+    {title: "Medicamento4", icon: "bi-heart", price: "R$XX,XX"},
+    {title: "Medicamento5", icon: "bi-heart", price: "R$XX,XX"},
+    {title: "Medicamento6", icon: "bi-heart", price: "R$XX,XX"},
 ]
 
 const cardContainer = document.getElementById("card-container");
@@ -66,6 +66,11 @@ cardData.forEach(data => {
     const addButton = document.createElement("button");
     addButton.className = "btn btn-primary";
     addButton.textContent = "Botão Adicionar";
+
+    addButton.addEventListener("click", () => {
+        console.log("Medicamento adicionado: ", data.title);
+        alert(`O medicamento ${data.title} foi adicionado com sucesso ao carrinho.`)
+    })
 
     const plusIcon = document.createElement("i");
     plusIcon.className = "bi bi-plus";
