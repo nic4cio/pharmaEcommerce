@@ -93,5 +93,3 @@ cardData.forEach(data => {
     col.appendChild(card);
     cardContainer.appendChild(col);
 });
-
-
