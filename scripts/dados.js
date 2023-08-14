@@ -1,21 +1,19 @@
-const usersData = `
-[
+const dadosUsuario = `
+  [
     {
-        email: "teste1@teste.com",
-        name: "Usuário 1",
-        password: "1234567"
+        "nome": "Admin",
+        "email": "teste@email.com",
+        "senha" : 1234
+    }, 
+    {
+        "nome": "José",
+        "email": "jose@email.com",
+        "senha" : 1234
     },
     {
-        email: "teste2@teste.com",
-        name: "Usuário 2",
-        password: "1234567"
-    },
-    {
-        email: "teste3@teste.com",
-        name: "Usuário 3",
-        password: "1234567"
-    },
-]
-`;
-
-console.log(usersData)
+        "nome": "Bruno",
+        "email": "bruno@email.com",
+        "senha" : 1234
+    }  
+  ]
+`
