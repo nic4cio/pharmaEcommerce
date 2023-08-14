@@ -1,4 +1,4 @@
-const dadosUsuario = `
+let dadosUsuario = `
   [
     {
         "nome": "Admin",
